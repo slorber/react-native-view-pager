@@ -132,6 +132,7 @@ export default class ViewPager extends Component {
           dataSource={dataSource}
           renderRow={this.renderRow.bind(this)}
           onLayout={this.onLayout.bind(this)}
+          {...this.props.listViewProps}
         />
       </View>
     );
